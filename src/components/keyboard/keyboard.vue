@@ -1,6 +1,6 @@
 <template>
 	<div :class="['r-keyboard']" >
-		<div class="r-keyboard-cliper" v-show="show"></div>
+		<div class="r-keyboard-cliper" v-show="show" @click="remove"></div>
 		<div :class="['r-keyboard-content',show?'':'r-keyboard-content-hidden']" @touchstart="doTouch" @touchend="endTouch">
 			<div class="r-keyboard-head">
 				<div data-code="ok" class="confirm">确定</div>
